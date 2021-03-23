@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  background-image: url(/Images/bgwebsite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  color: white;
+  
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 5.2rem;
+}
+
+@font-face {
+  font-family: MyFont;
+  src: url(/images/adam.otf);
+}
+
+.topnav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100%;
+  height: 180px;
+}
+
+a.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 20;
+}
+
+a.logo img {
+  max-height: 100%;
+}
+
+.nav_button {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 1;
+}
+
+.langWrap {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  position: relative;
+  top: 50%;
+}
+
+.navlinks {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navlinks ul {
+  display: flex;
+}
+
+.navlinks li {
+  list-style: none;
+}
+
+.navlinks a {
+  padding-right: 50;
+  font-size: 18;
+}
+
+a.active {
+  color: rgb(214, 0, 0);
+}
+
+.gridrow {
+  padding-top: 50;
+  max-width: 100%;
+}
+
+.gridrow>.column4, .column3, .column2 {
+  float: left;
+  padding: 8;
+}
+
+.gridrow>.column4 {
+  width: 25%;
+}
+
+.gridrow>.column3 {
+  width: 33%;
+}
+
+.gridrow>.column2 {
+  width: 50%;
+}
+
+.gridrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sample {
+  background: rgb(0, 0, 0);
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.705);
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sample img {
+  max-width: 80%;
+  margin-top: 20;
+}
+
+.sample h1 {
+  font-size: 18;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+a.contact {
+  font-size: 25;
+  text-decoration: underline;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 5.2rem;
+  display: flex;
+  margin-top: 200;
+}
+
+footer p {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+a.linkedin {
+  width: 100%;
+  position: inherit;
+  right: 0;
+  bottom: 0;
+  margin: 20;
+  height: 60px;
+  width: 60px;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #6f1416, #5e1113);
+  box-shadow: 12px 12px 24px #520f11, -12px -12px 24px #7e1719;
+  background-image: url(/Images/linkedinlogo.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a.linkedin:hover {
+  background: #681315;
+  box-shadow: inset 12px 12px 41px #460d0e, inset -12px -12px 41px #8a191c;
+  background-image: url(/Images/linkedinlogo.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns
+Changes size of the column according to screen size. */
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .gridrow>.column4 {
+    width: 50%;
+  }
+  .gridrow>.column3 {
+    width: 50%;
+  }
+  .gridrow>.column2 {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.titles, .presentation, .pitch, .funfact, .twitch {
+    max-width: 550px;
+    margin: auto;
+    padding: 50;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.twitch{
+    margin-top: 500px;
+}
+
+.titles {
+    font-weight: bold;
+    font-size: 45;
+    font-variant: small-caps;
+}
+
+.presentation, .pitch {
+    font-size: 25;
+}
+
+.funfact {
+    padding-top: 100px;
+}

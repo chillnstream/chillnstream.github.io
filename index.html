@@ -27,7 +27,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -46,16 +46,14 @@
 <body>
     <div class="page-container">
         <div class="content-wrap">
-            <header>
-            </header>
             <header class="titles">Bienvenue chez nous !</header>
             <div class="presentation">Nous sommes Chill'n'Stream : Notre mission, vous montrer des jeux fun et les
                 rendre compréhensibles de tout le monde, même ta grand mère ou ton cousin de 4 ans.
-
-                <br><a href="https://www.twitch.tv/gamegenerati0n" style="margin-top: 500;">Retrouvez nous sur
-                    twitch.tv/gamegenerati0n
-                    !</a></br>
             </div>
+            <div class="twitch"><a href="https://www.twitch.tv/gamegenerati0n" style="margin-top: 500;">Retrouvez
+                nous sur
+                twitch.tv/gamegenerati0n
+                !</a></div>
         </div>
         <footer>
             <p>© 2021 Chill'n'Stream</p>
